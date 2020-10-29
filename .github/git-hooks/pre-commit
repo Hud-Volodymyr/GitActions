@@ -16,10 +16,6 @@ for file in ${STAGED_FILES}; do
   fi
 done;
 
-
-
-ESLINT_EXIT="$?"
-
 if [[ $failed != 0 ]] ; then
   echo "🚫🚫🚫 ESLint failed, git commit denied!"
   exit $failed
