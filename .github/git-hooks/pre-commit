@@ -1,7 +1,6 @@
 #!/bin/bash
 cd "$(git rev-parse --show-toplevel)"
 ESLINT="node_modules/.bin/eslint"
-pwd
 
 STAGED_FILES=($(git diff --cached --name-only --diff-filter=ACM | grep ".jsx\{0,1\}$"))
 
