@@ -17,11 +17,11 @@ fi
 
 ESLINT_EXIT="$?"
 
-if [[ "${ESLINT_EXIT}" == 0 ]]; then
-  printf "COMMIT SUCCEEDED"
-else
-  printf "\n\033[41mCOMMIT FAILED:\033[0m Fix eslint errors and try again\n"
-  exit 1
-fi
+if [ $? -ne 0 ]; then
+    echo "ESLint failed on staged file '$file'. Please check your code and try again. You can run ESLint manually via npm run eslint."
+    exit 1 # exit with failure status
+    else
+      printf "\n\033[41mCOMMIT FAILED:\033[0m Fix eslint errors and try again\n"
+  fi
 
 exit $?
