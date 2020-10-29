@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Hud-Volodymyr/GitActions/issues"
   },
-  "homepage": "https://github.com/Hud-Volodymyr/GitActions#readme"
+  "homepage": "https://github.com/Hud-Volodymyr/GitActions#readme",
+  "devDependencies": {
+    "eslint": "^7.11.0"
+  }
 }
