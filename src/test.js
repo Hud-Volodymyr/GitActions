@@ -1,4 +1,4 @@
 'use strict';
 
-throw Error('Test error');
+console.log('Tests are here!');
 
